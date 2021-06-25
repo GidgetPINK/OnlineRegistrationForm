@@ -61,8 +61,13 @@ html{
 }
 
 .top{
-    margin: 5% 25%;
+    margin: 10% auto;
     text-align: center;
+    border-bottom: 5px double black;
+    width: 90%;
+}
+label[for=fullName]{
+    margin-top: 15px;
 }
 input:not([type=submit]):not([type=radio]):not([type=checkbox]){
     width: 80%;
@@ -82,6 +87,10 @@ p{
     margin: 2% 0 2% 5%;
 }
 
+#zipcode{
+    width: 40%;
+}
+
 .completeForm{
     background-color: whitesmoke;
 }
@@ -90,5 +99,27 @@ h1{
     background-color: #2d3945;
     color: #fff;
     padding: 5%;
+    text-align: center;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    margin: 2% 0 4% 5%;
+}
+textarea{
+    margin: 5% 2% 5% 4%;
+    width: 280px;
+    height: 110px;
+}
+
+#button{
+    width: 250px;
+    margin: 2% 4% 5% 10%;
+}
+
+footer{
+    padding-bottom: 25%;
+}
+footer p{
     text-align: center;
 }
