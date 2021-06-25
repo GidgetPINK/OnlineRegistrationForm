@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="completeForm">
@@ -19,17 +20,17 @@
     </section>
     <form>
         <fieldset>
-            <legend>Contact Information:</legend>
+            <legend class="contact">Contact Information:</legend>
             <label for="fullName">Full Name</label><br>
             <input type="text" id="fullName" name="fullName" placeholder="Required" required><br>
             <label for="email">Email Address</label><br>
             <input type="email" id="email" name="email" placeholder="Required" required><br>
             <label for="phone">Phone Number</label><br>
-            <input type="tel" id="phone" name="phone"><br>
+            <input type="tel" id="phone" name="phone" placeholder="Required" required><br>
             <label for="address">Street Address</label><br>
-            <input type="text" id="address" name="address"><br>
+            <input type="text" id="address" name="address" placeholder="Required" required><br>
             <label for="city">City</label><br>
-            <input type="text" id="city" name="city"><br>
+            <input type="text" id="city" name="city" placeholder="Required" required><br>
             <label for="states">State</label><br>
             <select id="states" name="states">
                 <option value="---">Choose State</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select><br>
@@ -37,7 +38,7 @@
             <input type="text" id="zipcode" name="zipcode" pattern="[0-9]*"><br>
         </fieldset>
         <fieldset>
-            <legend>Newsletter:</legend>
+            <legend class="newsletter">Newsletter:</legend>
             <p>Select the newsletters you would like to receive</p>
             <input type="checkbox" id="html" name="html">
             <label for="html">HTML News</label><br>
