@@ -61,7 +61,7 @@ body{
 }
 
 html{
-    height: 110%;
+    height: inherit;
     font-family: 'Lato', sans-serif;
     color: #595f69;
 }
@@ -98,12 +98,8 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]){
     width: 90%;
     padding: 10px;
     margin: 4% 5% 4% 5%;
-    border: none;
+    border: inset;
     border-radius: 3px;
-}
-
-input:not([type=submit]):focus{
-    background-color: #6e7c8a;
 }
 
 input[placeholder=Required]{
@@ -149,16 +145,24 @@ h1{
     font-size: 1.1rem;
 }
 
+#html{
+    margin-top: 25px;
+}
+
 input[type=radio],
 input[type=checkbox]{
     margin: 2% 0 4% 5%;
+}
+
+#plain{
+    margin-bottom: 55px;
 }
 
 textarea{
     margin: 5% 2% 5% 4.8%;
     width: 90%;
     height: 110px;
-    border: none;
+    border: inset;
     border-radius: 3px;
 }
 
@@ -186,5 +190,90 @@ Media Queries
 ==============*/
 
 @media screen and (min-width: 768px){
+    body{
+        max-width: 768px;
+    }
+    .top h2{
+        margin-bottom: 1%;
+    } 
+    .top p{
+        margin-top: 1.5%;
+    }   
+    fieldset .contact{
+        margin-bottom: 5% 
+    }
+    input:not([type=submit]):not([type=radio]):not([type=checkbox]){
+        width: 50%;
+        display: inline;
+        margin: 0 0 15px 5px;
+    }
+    select{
+        width: 50%;
+    }
+    label[for=fullName]{
+        float: left;
+        clear: both;
+        margin-right: 10%;
+        padding: 10px 0;
+    }
+    label[for=email]{
+        float: left;
+        padding: 2px 0;
+        margin: 25px 48px 0 38px;
+    }
+    label[for=phone]{
+        float: left;
+        margin: 20px 40px 0 38px;
+        padding: 10px 0;
+    }
+    label[for=address]{
+        float: left;
+        margin: 20px 40px 0 38px;
+        padding: 10px 0;
+    }
+    label[for=city]{
+        float: left;
+        margin: 20px 115px 0 38px;
+        padding: 10px 0;
+    }
+    label[for=states]{
+        float: left;
+        margin: 45px 75px 0 38px;
+        padding: 10px 0;
+    }
+    label[for=zipcode]{
+        float: left;
+        margin: 20px 80px 0 38px;
+        padding: 10px 0;
+    }
+    #zipcode{
+        width: 20%;
+    }
+    fieldset{
+        margin: 0 auto;
+    }
+    label[for=html],
+    label[for=css],
+    label[for=javascript],
+    label[for=format],
+    label[for=plain]{
+        margin: 2% 0 2% 1%;
+    }
     
+    input:not([type=text]){
+        margin-bottom: 1%;
+    }
+    .newsletter{
+       margin-bottom: 1%; 
+    }
+    
+    textarea{
+        margin-top: 10px;
+    }
+
+    #button{
+        width: 90%;
+        margin: 5%;
+        padding: 12px;
+    }
 }
