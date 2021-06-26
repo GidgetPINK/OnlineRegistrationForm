@@ -98,7 +98,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]){
     width: 90%;
     padding: 10px;
     margin: 4% 5% 4% 5%;
-    border: inset;
+    border: 1px inset;
     border-radius: 3px;
 }
 
@@ -162,7 +162,7 @@ textarea{
     margin: 5% 2% 5% 4.8%;
     width: 90%;
     height: 110px;
-    border: inset;
+    border: 1px inset;
     border-radius: 3px;
 }
 
@@ -193,6 +193,21 @@ Media Queries
     body{
         max-width: 768px;
     }
+
+    body:hover{
+        cursor: pointer;
+        background: #fff;
+    }
+
+    .completeForm:hover{
+        background: rgb(8,8,8);
+background: linear-gradient(0deg, rgba(165,167,170,1) 50%, rgba(249,247,247,1) 100%);
+    }
+    label:hover{
+        color: white;
+    }
+    
+
     .top h2{
         margin-bottom: 1%;
     } 
