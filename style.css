@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+
+/*=============
+Body Styles
+===============*/
 *,
 *::before,
 *::after {
@@ -66,22 +70,38 @@ html{
     color: #595f69;
 }
 
+.completeForm{
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+/*===================
+Header and Top styles
+=====================*/
+h1{
+    background-color: #2d3945;
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+    font-weight: bolder;
+}
 .top{
     margin: 10% auto;
     text-align: center;
     border-bottom: 5px double black;
     width: 90%;
 }
-
 .top h2{
     font-size: 1.5rem;
     margin-bottom: 5%;
     color: #2d3945;
 }
-
 .top p{
     margin-bottom: 12%;
 }
+
+/*=====================
+Contact section styles
+=======================*/
 
 fieldset .contact{
     margin-bottom: 10%;
@@ -93,6 +113,20 @@ fieldset .contact{
 label[for=fullName]{
     margin-top: 15px;
 }
+select{
+    width: 90%;
+    padding: 10px;
+    margin: 4% 5% 4% 5%;
+    border: none;
+    border-radius: 3px;
+}
+#zipcode{
+    width: 45%;
+}
+
+/*==================
+Input Styles
+====================*/
 
 input:not([type=submit]):not([type=radio]):not([type=checkbox]){
     width: 90%;
@@ -101,39 +135,44 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]){
     border: 1px inset;
     border-radius: 3px;
 }
-
 input[placeholder=Required]{
     text-align: right;  
 }
-
-select{
-    width: 90%;
-    padding: 10px;
-    margin: 4% 5% 4% 5%;
-    border: none;
-    border-radius: 3px;
+input[type=radio],
+input[type=checkbox]{
+    margin: 2% 0 4% 5%;
 }
+
+/*==============
+Focus States
+================*/
+input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus,
+textarea:focus{
+    box-shadow: 0 0 0 4px rgba(73, 3, 138, 0.996);      
+    outline: none;
+    transition: all 1s ease-out;
+}
+
+select:focus{
+    box-shadow: 0 0 0 4px rgba(73, 3, 138, 0.996);      
+    outline: none;
+    transition: all 1s ease-out;
+}
+#button:focus{
+    background-color: rgba(73, 3, 138, 0.996);
+    color: #fff;
+    outline-color: #17a59c;
+    transition: all 1s ease-out;
+}
+
+/*===================
+Newsletter section
+=====================*/
 
 label,
 legend,
 p{
     margin: 5% 0 2% 5%;
-}
-
-#zipcode{
-    width: 45%;
-}
-
-.completeForm{
-    background-color: rgba(245, 245, 245, 0.5);
-}
-
-h1{
-    background-color: #2d3945;
-    color: #fff;
-    padding: 5%;
-    text-align: center;
-    font-weight: bolder;
 }
 
 .newsletter{
@@ -147,11 +186,6 @@ h1{
 
 #html{
     margin-top: 25px;
-}
-
-input[type=radio],
-input[type=checkbox]{
-    margin: 2% 0 4% 5%;
 }
 
 #plain{
@@ -176,7 +210,6 @@ textarea{
     color: #fff;
     font-size: 1.1rem;
 }
-
 
 footer{
     padding-bottom: 2%;
