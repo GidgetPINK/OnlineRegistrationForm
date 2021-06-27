@@ -121,7 +121,7 @@ select{
     border-radius: 3px;
 }
 #zipcode{
-    width: 45%;
+    width: 45%; /*input width is 90% this sets the zipcode field to 50% of that*/
 }
 
 /*==================
@@ -295,7 +295,7 @@ background: linear-gradient(0deg, rgba(165,167,170,1) 50%, rgba(249,247,247,1) 1
         padding: 10px 0;
     }
     #zipcode{
-        width: 20%;
+        width: 25%;
     }
     fieldset{
         margin: 0 auto;
